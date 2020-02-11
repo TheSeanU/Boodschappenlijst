@@ -1,0 +1,36 @@
+.quantityInput {
+  width: 3em;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  text-align: center;
+  opacity: 1;
+
+}
+
+
+.container-fluid .img img{
+	float:right;
+}
+
+.container-fluid .w-100{
+	padding-bottom:15px;
+}
+
+.container-fluid .col-2 input[type=number]{
+	float:right;
+}
+
+body .container-fluid{
+	margin-top:30px;
+}
+
+
+body .row .col-12{
+	text-align:center;
+}
+body .row .col-12{
+	padding-top:50px;
+	padding-bottom:50px;
+}

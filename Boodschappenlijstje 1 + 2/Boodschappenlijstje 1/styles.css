@@ -1,0 +1,80 @@
+tr th{
+  padding-bottom: 20px;
+}
+th{
+    padding-left:50px;
+    padding-right:50px;
+    text-align: center;
+  }
+th:first-child{
+    text-align:left;
+    padding-left:0px !important;
+}
+th:last-child{
+  text-align: right;
+  padding-right: 0px;
+}
+
+.totaalText{
+  text-align: center;
+}
+
+.productName, .productPrice, .productQuantity, .productTotalCost{
+  padding-bottom: 10px;
+}
+
+#number {
+  width: 3em;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  text-align: center;
+  opacity: 1;
+
+}
+.col tbody .productQuantity input[type=number]{
+	text-align:center;
+}
+
+.pr{
+  text-align: center;
+}
+
+.col tbody .productTotalCost{
+	text-align:right;
+}
+
+.productName{
+  text-align: left;
+}
+
+.col table{
+  margin-top: 50px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.col h2 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.trLast td{
+	margin-top:16px;
+	padding-top:30px;
+}
+
+
+.trLast .totaalText, .trLast .productTotalCost{
+padding-bottom:10px;
+background-color:#898989 !important;
+color:#ffffff;
+font-weight:500;
+font-size:19px;
+padding-top:10px;
+}
+
+.trLast .productTotalCost{
+  padding-right: 5px;
+}
