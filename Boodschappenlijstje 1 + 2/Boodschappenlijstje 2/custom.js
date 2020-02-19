@@ -1,36 +1,24 @@
-function myFunction() {
+function totalPrice() {
 
-}
+  var pdtPrice = document.getElementsByClassName("productPrice")[0].innerText;
+  var qtyInput = document.getElementsByClassName("quantityInput")[0].value;
+
+  for (var i = 0; i < qtyInput.length; i++) {
+    var qtyValue = '';
+    qtyValue += qtyInput[i];
+    var subtotal = parseFloat(pdtPrice) * qtyInput
+    if (!isNaN(subtotal))
+      document.getElementById("subtotal").innerHTML = subtotal
+  }
+
+  console.log(subtotal);
+
+  var total = '';
+  for (var i = 0; i < total.length; i++) {
+    total = subtotal;
+    total++
+  }
 
 
 
-
-var quantityInput = document.getElementsByClassName('quantityInput')
-var productPrice = document.getElementsByClassName('productPrice')
-
-
-for (var i = 0; i < quantityInput.lenght; i++) {
-var input = quantityInput[i];
-input.addEventListener('value', function(event){
-console.log(input);
-  })
-
-}
-
-
-
-function updateCartTotal() {
-    let cartItemContainer = document.getElementsByClassName('cart-items')[0]
-    let cartRows = cartItemContainer.getElementsByClassName('cart-row')
-    let total = 0
-    for (let i = 0; i < cartRows.length; i++) {
-        let cartRow = cartRows[i]
-        let priceElement = cartRow.getElementsByClassName('cart-price')[0]
-        let quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
-        let price = parseFloat(priceElement.innerText.replace('$', ''))
-        let quantity = quantityElement.value
-        total = total + (price * quantity)
-    }
-    total = Math.round(total * 100) / 100
-    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
-}
+}totalPrice()
